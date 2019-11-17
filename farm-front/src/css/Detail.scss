@@ -1,0 +1,75 @@
+.area-title {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    background: #282828;
+    color: #FFF;
+    position: relative;
+
+    .menu {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 5px;
+        left: 5px;
+        fill: #FFF;
+        cursor: pointer;
+    }
+}
+
+.table-wrap {
+    padding: 0 10px;
+}
+
+.farm-info {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #999;
+
+    .area {
+        display: flex;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #BBB;
+
+        .title {
+            width: 30%;
+            border-right: 1px solid #999;
+            
+        }
+
+        .value {
+            width: 70%;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &.over {
+            background: #A00200;
+            color: #FFF;
+            font-weight: bold;
+        }
+
+        &.under {
+            background: #fc3;
+            color: #000;
+            font-weight: bold;
+        }
+
+        &.ideal {
+            background: green;
+            color: #FFF;
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .detail {
+        .farm-info {
+            width: 100%;
+        }
+    }
+}
